@@ -218,3 +218,13 @@ a:visited {
 a:link {
         text-decoration: none;
 }
+
+#nieuws img {
+    max-height: 600px;
+    border: 2px #6E97C7 solid;
+    box-shadow: 8px 8px 10px #aaa;
+}
+
+#nieuws img:nth-of-type(1) {
+    margin-bottom: 25px;
+}
