@@ -1,0 +1,220 @@
+/*
+Fonts:
+Amatica: header h1
+Dosis: header h3
+Slabo: p
+
+font-family: 'Amatica SC', cursive;
+font-family: 'Dosis', sans-serif;
+font-family: 'Slabo 27px', serif;
+*/
+
+/*
+Colors:
+primary color: #1F497B
+achtergrond section: #99B9C7 (licht)
+
+
+*/
+
+@import 'https://fonts.googleapis.com/css?family=Amatica+SC|Slabo+27px|Dosis';
+
+body {
+  position: relative;
+}
+
+
+h1 {
+    font-family: 'Amatica SC', cursive;
+    font-size: 100px;
+    font-weight: 550;
+    color: #1F497B;
+    margin: 0;
+    padding: 0;
+}
+
+h3, p {
+    font-family: 'Slabo 27px', serif;
+}
+
+p {
+    font-size: 20px;
+}
+
+section li {
+    font-size: 16px;
+    font-style: italic;
+}
+
+h2 {
+    font-family: 'Dosis', sans-serif;
+    color: #1F497B;
+    font-size: 40px;
+}
+
+section {
+    padding-bottom: 20px;
+}
+
+.col-md-8 h3, .col-md-4 h3 {
+    font-size: 30px;
+}
+
+.text-vertical-center {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#nieuws {
+    display: table;
+    position: relative;
+    width: 100%;
+    padding: 50px 0;
+}
+
+#nieuws .well {
+    max-width: auto;
+    background-color: beige;
+    margin: 0 50px;
+}
+
+#mainpicture {
+    max-height: 800px;
+    margin: 20px auto 0 auto;
+}
+
+section:nth-of-type(even) {
+    background-color: #1F497B;
+    color: white;
+}
+
+section:nth-of-type(even) h2 {
+    color: white;   
+}
+
+.row p {
+    text-align: justify;
+}
+/* unordered list andere bulletpoints */
+.row li {
+    display: block;
+}
+
+.row li:before {
+    /*Using a Bootstrap glyphicon as the bullet point*/
+    content: "\e080";
+    font-family: 'Glyphicons Halflings';
+    font-size: 9px;
+    float: left;
+    margin-top: 4px;
+    margin-left: -17px;
+    color: #CCCCCC;
+}
+
+#contact {
+    margin-top: 20px;
+    padding-top: 10px;
+}
+
+#mailto {
+    color: white;
+}
+
+#mailto:hover {
+    text-decoration: underline;
+}
+
+/* Map */
+
+.map {
+    height: 250px;
+}
+
+@media(max-width:768px) {
+    .map {
+        height: 75%;
+    }
+}
+/*
+.map iframe {
+    pointer-events: none;
+}
+*/
+
+/* nav */
+
+.jumptarget::before {
+  content:"";
+  display:block;
+  height:65px; /* fixed header height*/
+  margin:-65px 0 20px; /* negative fixed header height */
+}
+
+.hero-text {
+    background-repeat: repeat-x;
+    background-image: url("../img/logositelang2.JPG");
+    background-size: auto 200px;
+    width:100%;
+    display: table;
+    position: relative;
+    padding: 200px 0 30px 0;
+}
+
+nav.fixed-header {
+  position: fixed;
+  top:0; left:0;
+  width: 100%;
+}
+
+#main-navigation {
+  width:100%;
+  height:auto;
+  background: #6E97C7;
+  z-index:10;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  display: block;
+  text-align: center;
+}
+
+nav li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+    display:inline;
+  zoom: 1;
+}
+
+nav li a {
+    
+  display:inline-block;
+  padding: 20px;
+  color: #fff;
+  font-family: 'Dosis', sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all .3s ease-in-out;
+  font-size: 18px;
+}
+
+nav li a:hover {
+  background: rgba(255, 255, 255, 0.1);
+    text-decoration: none;
+}
+
+nav li a:active {
+    text-decoration: none;
+      background: rgb(0, 157, 234);
+}
+
+a:visited {
+        text-decoration: none;
+}
+
+a:link {
+        text-decoration: none;
+}
