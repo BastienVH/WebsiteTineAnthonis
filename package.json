@@ -1,0 +1,31 @@
+{
+  "name": "tinewebsite",
+  "version": "1.0.0",
+  "description": "Website voor Tine Anthonis",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BastienVH/WebsiteTineAnthonis.git"
+  },
+  "keywords": [
+    "Tine",
+    "Anthonis",
+    "muziektherapie",
+    "personal",
+    "website"
+  ],
+  "author": "Bastien Van Houdt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BastienVH/WebsiteTineAnthonis/issues"
+  },
+  "homepage": "https://github.com/BastienVH/WebsiteTineAnthonis#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-util": "^3.0.8",
+    "vinyl-ftp": "^0.6.0"
+  }
+}
