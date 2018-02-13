@@ -28,7 +28,7 @@ h1 {
     font-family: 'Amatica SC', cursive;
     font-size: 100px;
     font-weight: 550;
-    color: #1F497B;
+    color: white;
     margin: 0;
     padding: 0;
 }
@@ -66,6 +66,68 @@ section {
     vertical-align: middle;
 }
 
+/* nav */
+
+#nav .navbar {
+    margin-bottom: 0px;
+    border: none;
+    border-radius: 0;
+    background-color: #6E97C7;
+}
+
+#nav.affix {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index:10;
+}
+
+  #nav ul {
+    margin: 0;
+    padding: 0;
+    display: block;
+    text-align: center;
+  }
+  
+  #nav li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display:inline;
+    zoom: 1;
+  }
+  
+
+  #nav li a {
+    display:inline-block;
+    color: #fff;
+    font-family: 'Dosis', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all .3s ease-in-out;
+    font-size: 16px;
+  }
+  
+  #nav li a:hover {
+    background: rgba(255, 255, 255, 0.1);
+    text-decoration: none;
+  }
+  
+  #nav li a:active {
+    text-decoration: none;
+    background: rgb(0, 157, 234);
+  }
+  
+  a:visited {
+    text-decoration: none;
+  }
+  
+  a:link {
+    text-decoration: none;
+  }
+
+
+
 #nieuws {
     display: table;
     position: relative;
@@ -79,17 +141,24 @@ section {
     margin: 0 50px;
 }
 
+#mainmessage {
+    display: table;
+    position: relative;
+    width: 100%;
+    padding: 50px 0; 
+}
+
 #mainpicture {
     max-height: 800px;
     margin: 20px auto 0 auto;
 }
 
-section:nth-of-type(even) {
+section:nth-of-type(odd) {
     background-color: #1F497B;
     color: white;
 }
 
-section:nth-of-type(even) h2 {
+section:nth-of-type(odd) h2 {
     color: white;   
 }
 
@@ -142,7 +211,8 @@ section:nth-of-type(even) h2 {
 }
 */
 
-/* nav */
+
+
 
 .jumptarget::before {
   content:"";
@@ -161,63 +231,7 @@ section:nth-of-type(even) h2 {
     padding: 200px 0 30px 0;
 }
 
-nav.fixed-header {
-  position: fixed;
-  top:0; left:0;
-  width: 100%;
-}
 
-#main-navigation {
-  width:100%;
-  height:auto;
-  background: #6E97C7;
-  z-index:10;
-}
-
-nav ul {
-  margin: 0;
-  padding: 0;
-  display: block;
-  text-align: center;
-}
-
-nav li {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-    display:inline;
-  zoom: 1;
-}
-
-nav li a {
-    
-  display:inline-block;
-  padding: 20px;
-  color: #fff;
-  font-family: 'Dosis', sans-serif;
-  text-decoration: none;
-  text-transform: uppercase;
-  transition: all .3s ease-in-out;
-  font-size: 18px;
-}
-
-nav li a:hover {
-  background: rgba(255, 255, 255, 0.1);
-    text-decoration: none;
-}
-
-nav li a:active {
-    text-decoration: none;
-      background: rgb(0, 157, 234);
-}
-
-a:visited {
-        text-decoration: none;
-}
-
-a:link {
-        text-decoration: none;
-}
 
 #nieuws img {
     max-height: 600px;

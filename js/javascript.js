@@ -1,15 +1,4 @@
-
-$(window).scroll(function(){
-    if ($(window).scrollTop() >= 415) {
-       $('nav').addClass('fixed-header');
-       document.getElementById("nieuws").style.marginTop = "65px";
-    }
-    else {
-       $('nav').removeClass('fixed-header');
-       document.getElementById("nieuws").style.marginTop = "0px";
-    }
-});
-
+/* Smooth-scroll */
 $(function() {
   $('a[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -23,4 +12,23 @@ $(function() {
       }
     }
   });
+});
+// Fix navbar to top of view
+$('#nav').affix({
+  offset: {
+    top: $('header').height()
+  }
+});	
+// put class active on menu item on click
+$(".nav a").on("click", function(){
+  $(".nav").find(".active").removeClass("active");
+  $(this).parent().addClass("active");
+});
+// Close responsive menu on click
+$('.nav a').on('click', function() {
+  // check if window is small enough so dropdown is created
+  var toggle = $(".navbar-toggle").is(":visible");
+  if (toggle) {
+    $(".navbar-collapse").collapse('hide');
+  }
 });
