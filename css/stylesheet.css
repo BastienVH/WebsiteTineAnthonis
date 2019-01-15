@@ -149,7 +149,7 @@ section {
 }
 
 #mainpicture {
-    max-height: 800px;
+    max-height: 900px;
     margin: 20px auto 0 auto;
 }
 
@@ -234,7 +234,7 @@ section:nth-of-type(odd) h2 {
 
 
 #nieuws img {
-    max-height: 600px;
+    max-height: 900px;
     border: 2px #6E97C7 solid;
     box-shadow: 8px 8px 10px #aaa;
 }
